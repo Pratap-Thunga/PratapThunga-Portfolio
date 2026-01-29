@@ -13,6 +13,7 @@ import {
   ListItemText,
   useScrollTrigger,
 } from "@mui/material";
+import resumeFile from "../assets/PratapThunga_Resume.pdf";
 import { Menu as MenuIcon, FileDownload } from "@mui/icons-material";
 
 function ElevationScroll(props) {
@@ -35,6 +36,23 @@ function ElevationScroll(props) {
 
 export const Header = ({ scrollTo }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleDownloadResume = async () => {
+    try {
+      const res = await fetch(resumeFile);
+      const blob = await res.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "PratapThunga_Resume.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error("Resume download failed:", err);
+    }
+  };
 
   const handleScrollTo = (id) => {
     scrollTo(id);
@@ -82,13 +100,11 @@ export const Header = ({ scrollTo }) => {
                   </Button>
                 ))}
                 <Button
-                  component="a"
-                  href="/resume.pdf"
-                  download
                   variant="outlined"
                   color="primary"
                   startIcon={<FileDownload />}
                   sx={{ borderRadius: 2, borderWidth: 2 }}
+                  onClick={handleDownloadResume}
                 >
                   RESUME
                 </Button>
