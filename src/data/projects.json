@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Socket & Meter Board Configurator",
+    "category": "Smart Home Configurators",
+    "tech": ["React.js", "Redux", "Azure", "SonarQube"],
+    "description": "Led the migration from legacy rule engines to custom in-house solutions. Improved system performance and reduced licensing costs.",
+    "projectDoes": "This configurator allows users to design and customize socket and meter board layouts for smart home installations. It provides an intuitive interface to configure various electrical components, validate configurations against industry standards, and generate detailed specifications for manufacturing and installation.",
+    "myWork": [
+      "Led the architectural migration from a legacy third-party rule engine to a custom-built, in-house solution; improved system performance and reduced licensing costs while maintaining complex business logic integrity.",
+      "Developed a GDPR-compliant cookie and analytics consent modal, enabling ethical user data collection and boosting lead generation by capturing high-intent user insights.",
+      "Integrated RESTful document APIs to automate the dynamic generation of Bills of Materials (BOM), allowing users to export and download real-time configuration data in multiple formats.",
+      "Set up an Azure DevOps pipeline to track code coverage and detect security vulnerabilities on the SonarQube platform.",
+      "Designed and implemented a system to fetch product configurations from the CPQ rule engine to the client side.",
+      "Worked on data insertion and updates using Microsoft SQL Server (MsSQL).",
+      "Remediated 15 critical penetration testing vulnerabilities during UAT; collaborated with security teams to ensure a zero-defect production launch and on-time go-live.",
+      "Implemented a real-time geolocation feature in React.js, enhancing personalization and user engagement by 30%."
+    ]
+  },
+  {
+    "title": "Lighting Configurator (V2 & V3)",
+    "category": "Electrification Solutions",
+    "tech": ["React.js", "Material UI", "Vite", "Google Analytics"],
+    "description": "Custom Canvas-based design space for electrical load and lighting optimization with EULUMDAT file parsing.",
+    "projectDoes": "Lighting Configurator A precision tool designed to streamline the configuration of compliant emergency lighting systems. This application simplifies the selection process for building owners and contractors, providing expert guidance to ensure maximum safety and regulatory compliance through a user-centric interface.",
+    "myWork": [
+      "Implemented a secure login and email verification flow using OTPs, ensuring robust authentication and data integrity; developed APIs for seamless frontend–backend data exchange.",
+      "Built a custom Canvas-based design tool for floor planning, enabling room drawing and precise product placement for electrical load and lighting optimization.",
+      "Developed a lighting visualization POC by parsing EULUMDAT (.ldt) files to render polar graphs, iso-candela, and linear plots for accurate light distribution analysis.",
+      "Enhanced UX with Fit-to-Zoom functionality for efficient canvas navigation and visualization.",
+      "Created custom Google Analytics metrics and a Looker Studio dashboard to analyze user behavior and performance KPIs.",
+      "Migrated a Create React App (CRA) application to Vite, improving build performance and development efficiency."
+    ],
+    "projectOutlines": [
+      "Easily select your products",
+      "Insert/create your floorplan and place your products",
+      "Automatically calculate the central power supply system needed for your project",
+      "Download all the documents related to your project",
+      "Share your project with an referent via link and email to get a quotation"
+    ]
+  },
+  {
+    "title": "3D Elevator Configurator",
+    "category": "3D Visualization",
+    "tech": ["React.js", "Three.js", "Node.js", "Express"],
+    "description": "Interactive 3D model delivering realistic animations for industrial product visualization.",
+    "projectDoes": "This 3D configurator allows customers and engineers to visualize and customize elevator systems in real-time. It provides an immersive experience to explore different elevator configurations, view realistic 3D models, understand spatial relationships, and make informed decisions before purchasing or customizing industrial lift systems.",
+    "myWork": [
+      "Built secure REST APIs using Node.js and Express.js, ensuring safe and reliable file transfers of up to 25MB between front-end and back-end applications, adhering to best practices for data security.",
+      "Built an interactive 3D elevator model with Three.js, delivering realistic animations and improving user visualization experience."
+    ]
+  }
+]

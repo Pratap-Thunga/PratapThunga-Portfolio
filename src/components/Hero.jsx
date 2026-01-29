@@ -64,12 +64,14 @@ export const Hero = ({ scrollTo }) => {
               <IconButton
                 color="primary"
                 href="https://www.linkedin.com/in/pratap-thunga1/"
+                target="_blank"
               >
                 <LinkedIn />
               </IconButton>
               <IconButton
                 color="primary"
                 href="https://github.com/Pratap-Thunga"
+                target="_blank"
               >
                 <GitHub />
               </IconButton>
