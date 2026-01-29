@@ -38,7 +38,10 @@ export const Header = ({ scrollTo }) => {
 
   const handleDownloadResume = async () => {
     try {
-      const resumePath = new URL("../assets/PratapThunga_Resume.pdf", import.meta.url).href;
+      const resumePath = new URL(
+        "../assets/PratapThunga_Resume.pdf",
+        import.meta.url,
+      ).href;
       const res = await fetch(resumePath);
       const blob = await res.blob();
       const url = window.URL.createObjectURL(blob);
@@ -85,7 +88,7 @@ export const Header = ({ scrollTo }) => {
                   alignItems: "center",
                 }}
               >
-                {["Work", "Experience", "About"].map((item) => (
+                {["About", "Work", "Experience"].map((item) => (
                   <Button
                     key={item}
                     onClick={() => handleScrollTo(item.toLowerCase())}

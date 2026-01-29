@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { SkillsMarquee } from './components/SkillsMarquee';
 import { Projects } from './components/Projects';
+import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Recognition } from './components/Recognition';
 import { Footer } from './components/Footer';
@@ -24,6 +25,7 @@ const App = () => {
       <Header scrollTo={scrollTo} />
       <Hero scrollTo={scrollTo} />
       <SkillsMarquee />
+      <About />
       <Projects />
       <Experience />
       <Recognition />

@@ -25,13 +25,15 @@ export const Experience = () => {
       ],
     },
     {
-      role: "Frontend Developer | UI Engineer",
+      role: "Full stack Developer | Technology Analyst",
       company: "Infosys Ltd.",
-      period: "July 2016 - July 2020",
-      location: "Chennai, TN",
+      period: "March 2022 - December 2025",
+      location: "Bengaluru, KA",
       points: [
+        "Architected reusable components using React.js and Material UI for enterprise-scale applications.",
         "Translated complex design concepts into functional React UI components.",
-        "Maintained high code quality standards using SonarQube and automated testing.",
+        "Managed complex rule engines (Configit/Epicor) for automated business logic.",
+        "Maintained high code quality standards using SonarQube and unit testing.",
       ],
     },
   ];
