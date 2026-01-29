@@ -88,7 +88,7 @@ export const Header = ({ scrollTo }) => {
                   alignItems: "center",
                 }}
               >
-                {["About", "Work", "Experience"].map((item) => (
+                {["About", "Projects", "Experience"].map((item) => (
                   <Button
                     key={item}
                     onClick={() => handleScrollTo(item.toLowerCase())}
