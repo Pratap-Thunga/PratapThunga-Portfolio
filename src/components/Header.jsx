@@ -13,7 +13,6 @@ import {
   ListItemText,
   useScrollTrigger,
 } from "@mui/material";
-import resumeFile from "../assets/PratapThunga_Resume.pdf";
 import { Menu as MenuIcon, FileDownload } from "@mui/icons-material";
 
 function ElevationScroll(props) {
@@ -39,7 +38,8 @@ export const Header = ({ scrollTo }) => {
 
   const handleDownloadResume = async () => {
     try {
-      const res = await fetch(resumeFile);
+      const resumePath = new URL("../assets/PratapThunga_Resume.pdf", import.meta.url).href;
+      const res = await fetch(resumePath);
       const blob = await res.blob();
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
